@@ -1,0 +1,189 @@
+
+body {
+    background-image: url("../img/foto_biblioteca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tela-login {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    color: beige;
+    border-radius: 20px;
+}
+
+.nome, .senha {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type=button], input[type=submit], input[type=reset]  {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(201, 89%, 7%);
+    color: beige;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    cursor: pointer; 
+    background-color: #044c70;
+  }
+
+h1 {
+    text-align: center;
+    vertical-align: top; 
+}
+
+.corpo {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b9e4fa;
+    color: beige;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bem-vindo {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: beige;
+    border-radius: 5px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.listar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.tela-cadastro {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 175vh;
+    padding: 10px;
+    color: beige;
+    border-radius: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.listar {
+    padding: 10px;
+    width: 100vh;
+    color: beige;
+    border-radius: 20px;
+    text-align: center; 
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-container table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.listar input[type="submit"] {
+  width: 100%; 
+}
+
+
+@media (max-width: 600px) {
+    .tela-cadastro,
+    .listar {
+      width: 100%;
+    }
+  }
+
+.autor, .editora, .livro, .aluno, .exemplar, .emprestimo {
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    width: 300px;
+    text-align: left;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    margin-left: 50px;
+}
+
+.btn-voltar {
+    position: absolute;
+    bottom: 80%;
+    right: 1.3%;
+}
+
+.btn-proximo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+input[name="ano_publicacao"], input[name="nome_autor"], input[name="numero_exemplar"], input[name="data_devolucao"] {
+    margin-right: 50px;
+}
+
+select[name="ideditora"], select[name="idlivro"], select[name="idexemplar_livro"], select[name="idaluno"] {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.box-search {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: .2%
+}
+
+.listar-container .listar input[type=submit]:hover {
+    transform: scale(1.1);
+}
